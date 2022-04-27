@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="NilaiKinerja <= 56.5\nentropy = 1.445\nsamples = 26\nvalue = [9, 4, 13]\nclass = MUTASI", fillcolor="#e1d0f9"] ;
+1 [label="entropy = 0.0\nsamples = 2\nvalue = [0, 2, 0]\nclass = PHK", fillcolor="#39e581"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="MasaKerja <= 6.5\nentropy = 1.309\nsamples = 24\nvalue = [9, 2, 13]\nclass = MUTASI", fillcolor="#ddcaf8"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="entropy = 0.0\nsamples = 3\nvalue = [3, 0, 0]\nclass = PROMOSI", fillcolor="#e58139"] ;
+2 -> 3 ;
+4 [label="Usia <= 39.5\nentropy = 1.268\nsamples = 21\nvalue = [6, 2, 13]\nclass = MUTASI", fillcolor="#c4a3f3"] ;
+2 -> 4 ;
+5 [label="Usia <= 31.0\nentropy = 0.439\nsamples = 11\nvalue = [0, 1, 10]\nclass = MUTASI", fillcolor="#8e4de8"] ;
+4 -> 5 ;
+6 [label="entropy = 1.0\nsamples = 2\nvalue = [0, 1, 1]\nclass = PHK", fillcolor="#ffffff"] ;
+5 -> 6 ;
+7 [label="entropy = 0.0\nsamples = 9\nvalue = [0, 0, 9]\nclass = MUTASI", fillcolor="#8139e5"] ;
+5 -> 7 ;
+8 [label="NilaiKinerja <= 89.5\nentropy = 1.295\nsamples = 10\nvalue = [6, 1, 3]\nclass = PROMOSI", fillcolor="#f4c9aa"] ;
+4 -> 8 ;
+9 [label="NilaiPelatihan <= 84.5\nentropy = 1.371\nsamples = 5\nvalue = [1, 1, 3]\nclass = MUTASI", fillcolor="#c09cf2"] ;
+8 -> 9 ;
+10 [label="entropy = 0.0\nsamples = 3\nvalue = [0, 0, 3]\nclass = MUTASI", fillcolor="#8139e5"] ;
+9 -> 10 ;
+11 [label="entropy = 1.0\nsamples = 2\nvalue = [1, 1, 0]\nclass = PROMOSI", fillcolor="#ffffff"] ;
+9 -> 11 ;
+12 [label="entropy = 0.0\nsamples = 5\nvalue = [5, 0, 0]\nclass = PROMOSI", fillcolor="#e58139"] ;
+8 -> 12 ;
+}
